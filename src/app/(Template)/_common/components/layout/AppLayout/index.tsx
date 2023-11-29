@@ -9,7 +9,7 @@ const AppLayout = ({ children }: Props) => {
     <>
       <Header />
       <SideBar />
-      <div>{children}</div>
+      <main>{children}</main>
     </>
   );
 };
