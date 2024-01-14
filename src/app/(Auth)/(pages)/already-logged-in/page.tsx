@@ -4,7 +4,7 @@ const LoggedIn = () => {
   return (
     <div>
       <h1>LoggedIn</h1>
-      <Link href={"/home"}>Go To Home</Link>
+      <Link href={"/"}>Go To Home</Link>
     </div>
   );
 };

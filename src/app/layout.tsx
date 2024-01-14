@@ -35,6 +35,7 @@ export const metadata: Metadata = {
     shortcut: ["/meta/apple-touch-icon.png"],
   },
   manifest: "/meta/site.webmanifest",
+  viewport: { width: "device-width", initialScale: 1 },
 };
 
 export default function RootLayout({
@@ -43,7 +44,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body className={cairo.className}>
         <UIProvider themeProps={{ attribute: "class", defaultTheme: "light" }}>
           {children}
