@@ -24,11 +24,6 @@ export default function Header({ links }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   return (
     <Navbar
-      className={isMenuOpen ? "bg-background/80" : "bg-transparent"}
-      classNames={{
-        wrapper: "container",
-        menu: isMenuOpen ? "bg-background/80" : "",
-      }}
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       shouldHideOnScroll
